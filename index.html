@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Коваль</title>
+
+  <!-- Google Font (зразок з файлу) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fffafc;
+      --accent: #fed0ff;
+      --text: #222;
+      --muted: #555;
+      --card-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      --radius: 12px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Roboto Flex", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--text);
+      background:var(--bg);
+    }
+
+    .resume {
+      max-width: 980px;
+      margin:28px auto;
+      padding:22px;
+      background:#ffffff;
+      border-radius:16px;
+      box-shadow: var(--card-shadow);
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+    }
+
+    .header {
+      grid-column: 1 / -1;
+      display:flex;
+      align-items:center;
+      gap:18px;
+      border-bottom:1px solid #f0e7f2;
+      padding-bottom:14px;
+      margin-bottom:8px;
+    }
+
+    .photo {
+      width:96px;
+      height:96px;
+      border-radius:12px;
+      background:#eee;
+      overflow:hidden;
+      flex:0 0 96px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+    .name {
+      font-size:20px;
+      font-weight:700;
+    }
+
+    .subtitle { color:var(--muted); font-size:14px; margin-top:4px; }
+
+    .contact {
+      margin-left:auto;
+      text-align:right;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .contact a { color:var(--text); text-decoration:none; display:block; margin-bottom:6px; }
+
+    .main-content {
+      padding:6px 2px 2px 2px;
+    }
+
+    .sidebar {
+      background:var(--accent);
+      padding:14px;
+      border-radius:10px;
+      min-height:120px;
+    }
+
+    h2 { margin:12px 0 8px 0; font-size:16px; }
+    p { margin:6px 0 10px 0; line-height:1.45; color:#333; }
+
+    .skills, .edu, .exp { background:#fff; border-radius:10px; padding:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.02); margin-bottom:12px; }
+    .skills ul, .edu ul, .exp ul { padding-left:18px; margin:6px 0; color:var(--muted); }
+
+    footer { grid-column:1 / -1; text-align:center; color:var(--muted); font-size:13px; margin-top:10px; }
+    @media (max-width:880px){
+      .resume { grid-template-columns: 1fr; padding:16px; }
+      .contact { text-align:left; margin-left:0; margin-top:8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume">
+    <div class="header">
+      <div class="photo">
+          <a href="https://ibb.co/ym1TvqwP"><img src="https://i.ibb.co/ym1TvqwP/123.jpg" alt="123" border="0"></a>
+        <img src="img/my-photo.png" alt="Фото Коваль Артьом" onerror="this.style.display='none'">
+      </div>
+
+      <div>
+        <div class="name">Коваль Артьом</div>
+        <div class="subtitle">Студент / Web-розробник</div>
+      </div>
+
+      <div class="contact">
+        <a href="tel:+380961014535"> +38 096 101 4535</a>
+        <a href="mailto:kovaljartem73@gmail.com"> kovaljartem73@gmail.com</a>
+        <div style="margin-top:8px; font-size:13px;">Місто: Сміла </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <section class="summary">
+        <h2>Про себе</h2>
+        <p>Маю базові навички HTML. Маю бажання вчитися веб-розробці.</p>
+      </section>
+
+      <section class="exp">
+        <h2>Досвід</h2>
+        <ul>
+          <li>Практичні роботи з HTML— створення резюме.</li>
+          <li>Самостійно працюю у: Brackets, Visual Studio Code.</li>
+        </ul>
+      </section>
+
+      <section class="edu">
+        <h2>Освіта</h2>
+        <ul>
+          <li>Навчальний заклад: СТФК НУХТ </li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2>Навички</h2>
+        <ul>
+          <li>HTML — базовий рівень</li>
+          <li>Робота з редакторами коду (Brackets, VS Code)</li>
+        </ul>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <h2>Контакт</h2>
+      <p><strong>Ім'я:</strong><br> Коваль Артьом</p>
+      <p><strong>Телефон:</strong><br> <a href="tel:+380961014535">+38 096 101 4535</a></p>
+      <p><strong>Email:</strong><br> <a href="mailto:kovaljartem73@gmail.com">kovaljartem73@gmail.com</a></p>
+
+      <h2>Додатково</h2>
+      <p>Готовий до співпраці, відкритий до завдань.</p>
+    </aside>
+
+
+  </div>
+
+</body>
+</html>
